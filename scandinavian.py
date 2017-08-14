@@ -1,3 +1,4 @@
+
 from pptx import Presentation
 from os import *
 
@@ -18,6 +19,8 @@ title = firstslide.shapes.title
 title.text = str(input("Please input a title for your pptx: "))
 
 #Checks every file in the folder selected and makes slides for the images
+#I'm pretty sure I should make a slide creation function so I don't repeat the code
+#here but meh, it still works :)
 for file in listdir():
     try:
         filename, extension = file.split(".")
