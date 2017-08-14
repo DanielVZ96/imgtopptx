@@ -48,4 +48,4 @@ for folder in foldersinpath:
     chdir(cpath)
 
 #Done
-newppt.save("test.pptx")
+newppt.save(input("please enter your desired filename: ") + ".pptx")
